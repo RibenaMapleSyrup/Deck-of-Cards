@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Deck of Cards</title>
+<meta charset="utf-8"/>
+<script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/carbon-components/css/carbon-components.min.css" type="text/css">
+<link rel="stylesheet" href="main.css">
+<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+    <div class="bx--row">
+        <div class="bx--col">
+          <h1 class="header center">
+          Deck of Cards
+          </h1>
+        </div>
+    </div>
+
+    <br>
+
+<div class="bx--grid">
+
+
+  <br>
+
+  <div class="bx--row">
+    <div class="bx--col">
+      <h3>Click on a card to select it from the deck.<h3>
+    </div>
+  </div>
+
+<br>
+
+<div class="bx--row">
+  <div class="bx--col">
+  <!-- <button class ="bx--btn bx--btn--primary"
+  type="button"> -->
+  <a href="javascript:void(0)" class="bx--btn bx--btn--primary" type="button" onclick="shuffle(deck); render('deck', deck);">Shuffle</a>
+  <br><br><br>
+<div id="deck"></div>
+</div>
+<div class="bx--col">
+  <a href="javascript:void(0)" class="bx--btn bx--btn--primary" type="button" onclick="sort(selection); render('selection', selection);">Sort</a>
+  <br><br><br>
+<div id="selection"></div>
+</div>
+</div>
+</div>
+<!-- </div> -->
+</body>
+</html>
