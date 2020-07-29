@@ -1,6 +1,6 @@
 .bx--grid
 {
-text-align: center;
+  text-align: center;
 }
 
 .header
@@ -14,27 +14,28 @@ text-align: center;
 
 .card
 {
-padding: 5px;
-border: solid 1px #808080;
-background-color: white;
-display: inline-block;
-border-radius: 5px;
-text-align: center;
-color:black;
-margin: 3px;
+  padding: 5px;
+  border: solid 1px #808080;
+  background-color: white;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  color:black;
+  margin: 3px;
 }
 
 .btn
 {
-background:white;
-padding: 10px 20px;
-border-radius:30px;
-margin: 10px;
-display:inline-block;
+  background:white;
+  padding: 10px 20px;
+  border-radius:30px;
+  margin: 10px;
+  display:inline-block;
 }
 
-.card .value{
-font-size:10pt;
+.card .value
+{
+  font-size:10pt;
 }
 
 
@@ -51,7 +52,6 @@ font-size:10pt;
 {
   background-image: url("images/heart.png");
   background-size: 40px 41px;
-
   width: 40px;
   height: 41px;
 }
@@ -60,7 +60,6 @@ font-size:10pt;
 {
   background-image: url("images/club.png");
   background-size: 40px 41px;
-
   width: 40px;
   height: 41px;
 }
@@ -69,7 +68,6 @@ font-size:10pt;
 {
   background-image: url("images/spade.png");
   background-size: 40px 41px;
-
   width: 40px;
   height: 41px;
 }
