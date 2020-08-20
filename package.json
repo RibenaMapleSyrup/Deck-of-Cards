@@ -1,0 +1,22 @@
+{
+  "name": "cards",
+  "version": "1.0.0",
+  "description": "shuffling and sorting cards ",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RibenaMapleSyrup/Deck-of-Cards.git"
+  },
+  "author": "Sean Greaves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RibenaMapleSyrup/Deck-of-Cards/issues"
+  },
+  "homepage": "https://github.com/RibenaMapleSyrup/Deck-of-Cards#readme",
+  "devDependencies": {
+    "jest": "^26.4.1"
+  }
+}
