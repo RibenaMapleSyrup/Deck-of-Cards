@@ -1,29 +1,35 @@
-var rank = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"],
-rank_value = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
-suits = ["clubs", "spades", "hearts", "diamonds"],
-suit_value = [1, 2, 3, 4],
-deck = new Array(),
+const rank = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"],
+// rank_value = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+suits = ["clubs", "spades", "hearts", "diamonds"]
+// suit_value = [1, 2, 3, 4]
+
+var deck = new Array(),
 selection = new Array(),
 i, x, index, card, value, suit, cut1, cut2, hold;
 
 function createDeck() {
   for(i = 0; i < suits.length; i++) {
     for(x = 0; x < rank.length; x++) {
-      card = {Value: rank[x], Suit: suits[i], ID: deck.length, Suit_Value: suit_value[i], Card_Value: rank_value[x]};
+      // card = {Value: rank[x], Suit: suits[i], ID: deck.length, Suit_Value: suit_value[i], Card_Value: rank_value[x]};
+      card = {Value: rank[x], Suit: suits[i], ID: deck.length, Suit_Value: i, Card_Value: x};
       deck.push(card);
     }
   }
   return deck;
 }
 
+function swap(cards) {
+  cut1 = Math.floor((Math.random() * cards.length));
+  cut2 = Math.floor((Math.random() * cards.length));
+  hold = cards[cut1];
+  cards[cut1] = cards[cut2];
+  cards[cut2] = hold;
+}
+
 function shuffle(cards) {
   console.log("shuffled")
   for (i = 0; i < 1000; i++) {
-    cut1 = Math.floor((Math.random() * cards.length));
-    cut2 = Math.floor((Math.random() * cards.length));
-    hold = cards[cut1];
-    cards[cut1] = cards[cut2];
-    cards[cut2] = hold;
+    swap(cards)
   }
 }
 
@@ -72,3 +78,5 @@ function load() {
 }
 
 window.onload = load;
+
+// module.exports = { createDeck }
