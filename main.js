@@ -27,8 +27,10 @@ class Deck {
     }
   draw(id, hand) {
     index = this.deck.findIndex(x => x.ID === parseInt(id))
-    hand.deck.push(this.deck[index])
-    this.deck.splice(index, 1)
+    if (index >= 0) {
+      hand.deck.push(this.deck[index])
+      this.deck.splice(index, 1)
+    }
   }
 }
 
