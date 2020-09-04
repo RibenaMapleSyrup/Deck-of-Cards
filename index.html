@@ -25,12 +25,12 @@
   <br>
   <div class="bx--row">
     <div class="bx--col">
-      <a href="javascript:void(0)" class="bx--btn bx--btn--primary" type="button" onclick="shuffle(deck); render('deck', deck);">Shuffle</a>
+      <a href="javascript:void(0)" class="bx--btn bx--btn--primary" type="button" onclick="deck1.shuffled(); renderDeck('deck', deck1);">Shuffle</a>
       <br><br><br>
       <div id="deck"></div>
     </div>
     <div class="bx--col">
-      <a href="javascript:void(0)" class="bx--btn bx--btn--primary" type="button" onclick="sort(selection); render('selection', selection);">Sort</a>
+      <a href="javascript:void(0)" class="bx--btn bx--btn--primary" type="button" onclick="selection1.sort(); renderDeck('selection', selection1);">Sort</a>
       <br><br><br>
       <div id="selection"></div>
     </div>
