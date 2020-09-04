@@ -1,6 +1,5 @@
 const rank = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"],
 suits = ["clubs", "spades", "hearts", "diamonds"]
-empty_deck = []
 var i, x, index, card, value, suit, cut1, cut2, full_deck
 
 class Deck {
