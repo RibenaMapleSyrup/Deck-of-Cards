@@ -1,7 +1,5 @@
 # Deck-of-Cards
 
-A simple app for drawing, shuffling and sorting playing cards to help me learn about unit testing and CI.
-
 ## To Get Started ...
 
 1. 'git clone' this repo.
